@@ -1,0 +1,37 @@
+<div ng-controller="ChatCtrl">
+    <div class="row d-flex justify-content-center">
+
+    </div>
+    <div class="row">
+        <div class="d-flex flex-column justify-content-start">
+            <div ng-repeat="msg in chat" class="col-12 card d-flex flex-row">
+                <div class="card-avatar d-flex flex-column justify-content-start">
+                    <div class="nickname nickname-author">
+                        <p class="status">
+                            Блогер
+                        </p>
+
+                    </div>
+                    <imgclass="avatar" src="http://ufland.moy.su/camera_a.gif">
+                </div>
+
+                <div class="card-body diary">
+                    <div class="card--header">
+                    </div>
+                    <div class="card-text">
+                        <ng-bind-html ng-bind-html="msg"></ng-bind-html>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <input type="text" ng-model="str">
+        <button ng-click="send()">send</button>
+    </div>
+</div>
