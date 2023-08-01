@@ -7,6 +7,7 @@ $app
 
         _socket.on('chat message', (msg) => {
             $scope.chat.push(msg)
+            $scope.$apply();
         });
         $scope.send = () => {
             _socket.emit('chat message', $scope.str);

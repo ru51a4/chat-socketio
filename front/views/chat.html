@@ -4,7 +4,7 @@
     </div>
     <div class="row">
         <div class="d-flex flex-column justify-content-start">
-            <div ng-repeat="msg in chat" class="col-12 card d-flex flex-row">
+            <div ng-repeat="msg in chat track by $index" class="col-12 card d-flex flex-row">
                 <div class="card-avatar d-flex flex-column justify-content-start">
                     <div class="nickname nickname-author">
                         <p class="status">
@@ -12,7 +12,7 @@
                         </p>
 
                     </div>
-                    <imgclass="avatar" src="http://ufland.moy.su/camera_a.gif">
+                    <img class="avatar" src="http://ufland.moy.su/camera_a.gif">
                 </div>
 
                 <div class="card-body diary">
